@@ -1,45 +1,27 @@
-/// <summary>
-/// <para>A service that handles TerminalService operations.</para>
-/// <para>
-/// The responsibility of a TerminalService is to provide input and output operations for the 
-/// TerminalService.
-/// </para>
-/// </summary>
+
+/// Provide input and output operations for the Terminal 
 public class TerminalService
 {
-    /// <summary>
     /// Constructs a new instance of TerminalService.
-    /// </summary>
     public TerminalService()
     {
     }
 
-    /// <summary>
     /// Gets numerical input from the TerminalService. Directs the user with the given prompt.
-    /// </summary>
-    /// <param name="prompt">The given prompt.</param>
-    /// <returns>Inputted number.</returns>
     public string ReadGuess(string prompt)
     {
         string rawValue = ReadText(prompt);
         return rawValue;
     }
 
-    /// <summary>
-    /// Gets text input from the TerminalService. Directs the user with the given prompt.
-    /// </summary>
-    /// <param name="prompt">The given prompt.</param>
-    /// <returns>Inputted text.</returns>
+    /// Gets text input from the Terminal. Directs the user with the given prompt
     public string ReadText(string prompt)
     {
         Console.Write(prompt);
         return Console.ReadLine();
     }
 
-    /// <summary>
-    /// Displays the given text on the TerminalService. 
-    /// </summary>
-    /// <param name="text">The given text.</param>
+    /// Displays the given text on the Terminal 
     public void WriteText(string text)
     {
         Console.WriteLine(text);

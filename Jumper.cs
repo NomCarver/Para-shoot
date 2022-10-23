@@ -30,19 +30,24 @@ public class Jumper
     public bool checkJumper(List<char> wordGuess, int tries)
     {
         count = 0;
-        for(int i=0;i<wordGuess.Count;i++){
+        for(int i=0;i<wordGuess.Count;i++)
+        {
             if (wordGuess[i] != '_')
             {
                 count++;
             }
-            else{}
+            else
+            {
+
+            }
         }
         if (count == wordGuess.Count)
         {
             return false;
                 
         }
-        else if(tries == 4){
+        else if(tries == 4)
+        {
             return false;
         }
         else 
@@ -63,7 +68,8 @@ public class Jumper
             jumper[0] = "   X";
 
         }
-        else{
+        else
+        {
             jumper.RemoveRange(0,1);
             trueTries++;
         }

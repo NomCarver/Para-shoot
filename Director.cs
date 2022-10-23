@@ -31,7 +31,7 @@ public class Director
 
     private void StartUp()
     {
-        Console.WriteLine("\nHint: The Book of Mormon");
+        Console.WriteLine("\nHint: This class");
         chosenWord = hiddenWord.pullWord();
         hiddenWord.listWord(chosenWord);
         hiddenWord.createHiddenWord();
